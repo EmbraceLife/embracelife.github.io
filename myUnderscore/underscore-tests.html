@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my underscore comment</title>
+  </head>
+  <body>
+    <script src="../myUtils.js"></script>
+    <script src="underscore-commented.js"></script>
+    <!-- <script src="underscore.js"></script> -->
+
+    <script> // _.findIndex
+      console.groupCollapsed('_.findIndex');
+      var array = [1,2,3];
+      var objects = [
+          {a: 0, b: 0},
+          {a: 1, b: 1},
+          {a: 2, b: 2},
+          {a: 0, b: 0},
+        ];
+      console.log("array: array of numbers", array);
+      console.log("objects : array of objects", objects);
+
+      tests({
+
+        'use1: _.findIndex([1,,3], function(el){return el === undefined;}); => 1': function(){
+          /* _.findIndex does not skip missing values */
+          var res = _.findIndex([1,,3], function(el){
+            return el === undefined;
+          });
+          eq(res, 1);
+        },
+
+        'use1: _.findIndex([1,"2",3], function(el){return el === "2";}); => 1': function(){
+
+          var res = _.findIndex([1,"2",3], function(el){
+            return el === "2";
+          });
+          eq(res, 1);
+        },
+
+        'use2: _.findIndex(objects, function(obj) {return obj.a === 0;}) => 0)': function(){
+          var res = _.findIndex(objects, function(obj) {return obj.a === 0;});
+          eq(res, 0);
+        },        
+
+        'use2: _.findIndex(objects, function(obj) {return obj.b * obj.a === 4;}); => 2': function(){
+          var res = _.findIndex(objects, function(obj) {return obj.b * obj.a === 4;});
+          eq(res, 2);
+        },
+
+        'use2: _.findIndex(objects, function(obj) {return obj.b * obj.a === 5;}); => -1': function(){
+          var res = _.findIndex(objects, function(obj) {return obj.b * obj.a === 5;});
+          eq(res, -1);
+        },
+        
+        'use2: _.findIndex(objects, function(a) {return a.foo === null;}); => -1': function(){
+          var res = _.findIndex(objects, function(a) {return a.foo === null;});
+          eq(res, -1);
+        },
+        
+        'use3: var res = _.findIndex(objects, {"a": 0}); => 0': function(){
+          var res = _.findIndex(objects, {"a": 0});
+          eq(res, 0);
+        },
+
+        'use4: var res = _.findIndex(objects, "a"); => 1': function(){
+          var res = _.findIndex(objects, 'a');
+          eq(res, 1);
+        },
+
+        'use5: var res = _.findIndex(nestedObj, ["a","b","c"]); => 2': function(){
+          var nestedObj = [{"a":1}, {"a":{"b":3}}, {"a":{"b":{"c":2}}}];
+          var res = _.findIndex(nestedObj, ["a","b","c"]);
+          eq(res, 2);
+        },
+        
+        'use6: _.findIndex(array); => 0': function(){
+          var res = _.findIndex(array);
+          arrayEq(res, 0);
+        },
+
+        'use7: _.findIndex(objects); => 0': function(){
+          var res = _.findIndex(array);
+          arrayEq(res, 0);
+        },
+
+        'use8: _.findIndex(null, _.noop); => -1': function(){
+          var res = _.findIndex(null, _.noop);
+          eq(res, -1);
+        },
+
+        'use8: _.findIndex({"a":1}, _.noop); => -1': function(){
+          var res = _.findIndex({"a":1}, _.noop);
+          eq(res, -1);
+        },
+        
+
+        'it should be able to access all arguments in _.findIndex': function(){
+          console.groupCollapsed('checks');
+          _.findIndex([{a: 1}], function(el, idx, arr) {
+            console.log(el);
+            console.log(idx);
+            console.log(arr);
+            console.log(this);
+          }, _);
+          console.groupEnd();
+        },
+
+        'use2: It Works with sparse arrays': function(){
+
+          var sparse = [];
+          sparse[20] = {a: 2, b: 2};
+          var res = _.findIndex(sparse, function(obj) {
+            return obj && obj.b * obj.a === 4;
+          });
+          eq(res, 20);
+        },
+
+        "use1: doesn\'t work with non-array part": function(){
+
+          var array = [1, 2, 3, 4];
+          array.match = 55;
+          var res = _.findIndex(array, function(x) { return x === 55; });
+          eq(res, -1); 
+        },
+
+        "use1: does match array index-keys": function(){
+
+          var array = [1, 2, 3, 4];
+          array['5'] = 55;
+          var res = _.findIndex(array, function(x) { return x === 55; });
+          eq(res, 5); 
+        },
+
+        'noUse: _.findIndex([1,2,3], 1); => -1': function(){
+          /* _.findIndex only allows array of values to work with callback */
+          var res = _.findIndex([1,,3], 1);
+          eq(res, -1);
+        },
+
+        'noUse: _.findIndex([1,2,3], 0); => -1': function(){
+          // var res = _.findIndex([1,,3], 3);
+          var res = _.findIndex([1,,3], 0);
+          eq(res, -1);
+        },
+      })
+      console.groupEnd();
+    </script>
+    <script> // _.findLastIndex
+      console.groupCollapsed('_.findLastIndex');
+      
+      var objects = [
+        {a: 0, b: 0},
+        {a: 1, b: 1},
+        {a: 2, b: 2},
+        {a: 0, b: 0},
+        {a: false, b: 0},
+        {a: NaN, b: 0},
+        {a: null, b: 0},
+        {a: undefined, b: 0},
+      ];
+
+      tests({
+        '_.findLastIndex(objects, function(obj) {return obj.a === 0;}); => 3': function(){
+          var res = _.findLastIndex(objects, function(obj) {return obj.a === 0;});
+          eq(res, 3);
+        },
+        
+        '_.findLastIndex(objects, function(obj) {return obj.b * obj.a === 4;}); => 2': function(){
+          var res = _.findLastIndex(objects, function(obj) {return obj.b * obj.a === 4;}); 
+          eq(res, 2);
+        },
+
+        '_.findLastIndex(objects, "a") => 2': function(){
+          var res = _.findLastIndex(objects, 'a');
+          eq(res, 2);
+        },
+
+        '_.findLastIndex(objects, function(obj) {return obj.b * obj.a === 5;}) => -1': function(){
+          var res = _.findLastIndex(objects, function(obj) {return obj.b * obj.a === 5;});
+          eq(res, -1);
+        },
+
+        '_.findLastIndex(null, _.noop); => -1': function(){
+          var res = _.findLastIndex(null, _.noop);
+          eq(res, -1);
+        },
+
+        '_.findLastIndex(undefined, _.noop); => -1': function(){
+          var res = _.findLastIndex(undefined, _.noop);
+          eq(res, -1);
+        },
+
+        '_.findLastIndex(NaN, _.noop); => -1': function(){
+          var res = _.findLastIndex(NaN, _.noop);
+          eq(res, -1);
+        },
+
+        '_.findLastIndex(3, _.noop); => -1': function(){
+          var res = _.findLastIndex(3, _.noop);
+          eq(res, -1);
+        },
+
+        '_.findLastIndex("string", _.noop); => -1': function(){
+          var res = _.findLastIndex("string", _.noop);
+          eq(res, -1);
+        },
+
+        '_.findLastIndex(objects, function(a) {return a.foo === null;}); => -1': function(){
+          var res = _.findLastIndex(objects, function(a) {return a.foo === null;}); 
+          eq(res, -1);
+        },
+
+        'check all args inside': function(){
+          _.findLastIndex([{a: 1}], function(el, key, obj) {
+            objEq(el, {a: 1});
+            objEq(obj[0], el);
+            eq(this, objects);
+          }, objects);
+        },
+
+        '': function(){
+
+          var sparse = [];
+          sparse[20] = {a: 2, b: 2};
+          var res = _.findLastIndex(sparse, function(obj) {
+            return obj && obj.b * obj.a === 4;
+          });
+          eq(res, 20);
+        },
+      });
+
+      console.groupEnd();
+
+    </script>
+    <script> // _.find
+      console.groupCollapsed('_.find');
+      var array = [1, 2, 3, 4];
+      var list = [{a: 1, b: 2}, {a: 2, b: 2}, {a: 1, b: 3}, {a: 1, b: 4}, {a: 2, b: 4}];
+      var obj = {
+          a: {x: 1, z: 3},
+          b: {x: 2, z: 2},
+          c: {x: 3, z: 4},
+          d: {x: 4, z: 1}
+        };
+      console.log("array : array of values", array);
+      console.log("list : array of objects", list);
+      console.log("obj : nested object", obj);
+      tests({
+        
+        '_.find(array, function(num){ return num % 2 == 0; }); => 2': function(){
+          var res = _.find(array, function(num){ return num % 2 == 0; });
+          eq(res, 2);
+        },
+        
+        '_.find(array, function(n) { return n > 2; }); => 3': function(){
+          var res = _.find(array, function(n) { return n > 2; });
+          eq(res, 3);
+        },
+
+        '_.find(array, function() { return false; }); => void 0': function(){
+          var res = _.find(array, function() { return false; });
+          eq(res, void 0);
+        },
+        
+        '_.find(array, function(x) { return x === 55; }) => void 0': function(){
+          var res = _.find(array, function(x) { return x === 55; });
+          eq(res, void 0);
+        },
+        
+        '_.find(list, {a: 1}) => {a: 1, b: 2}': function(){
+          var res = _.find(list, {a: 1});
+          objEq(res, {a: 1, b: 2});
+        },
+        
+        '_.find(list, {b: 4}); => {a: 1, b: 4}': function(){
+          var res = _.find(list, {b: 4}); 
+          objEq(res, {a: 1, b: 4});
+        },
+        
+        '_.find(list, {c: 1}) => undefined': function(){
+          var res = _.find(list, {c: 1});
+          eq(res, undefined);
+        },
+
+        '_.find([], {c: 1}) => undefined (undefined when searching empty list)': function(){
+          var res = _.find([], {c: 1});
+          eq(res, undefined);
+        },
+        
+        '_.find([1, 2, 3], function(num){ return num * 2 > 3; }); => 2 (found the first "2" and broke the loop)': function(){
+          var res = _.find([1, 2, 3], function(num){ return num * 2 > 3; });
+          eq(res, 2);
+        },
+        
+        '_.find(obj, {x: 2, z: 1}) => void 0': function(){
+          var res = _.find(obj, {x: 2, z: 1});
+          eq(res, void 0);
+        },
+
+        '_.find(obj, function(x) { return x.x === 4; }) => {x: 4, z: 1});': function(){
+          var res = _.find(obj, function(x) { return x.x === 4; });
+          objEq(res, {x: 4, z: 1});
+        },
+     
+      });
+      console.groupEnd();
+    </script>
+    <script> // _.filter
+      console.groupCollapsed('_.filter');
+      tests({
+        // QUnit.test('filter', function(assert) {
+        //   var evenArray = [1, 2, 3, 4, 5, 6];
+        //   var evenObject = {one: 1, two: 2, three: 3};
+        //   var isEven = function(num){ return num % 2 === 0; };
+
+        //   assert.deepEqual(_.filter(evenArray, isEven), [2, 4, 6]);
+        //   assert.deepEqual(_.filter(evenObject, isEven), [2], 'can filter objects');
+        //   assert.deepEqual(_.filter([{}, evenObject, []], 'two'), [evenObject], 'predicate string map to object properties');
+
+        //   _.filter([1], function() {
+        //     assert.strictEqual(this, evenObject, 'given context');
+        //   }, evenObject);
+
+        //   // Can be used like _.where.
+        //   var list = [{a: 1, b: 2}, {a: 2, b: 2}, {a: 1, b: 3}, {a: 1, b: 4}];
+        //   assert.deepEqual(_.filter(list, {a: 1}), [{a: 1, b: 2}, {a: 1, b: 3}, {a: 1, b: 4}]);
+        //   assert.deepEqual(_.filter(list, {b: 2}), [{a: 1, b: 2}, {a: 2, b: 2}]);
+        //   assert.deepEqual(_.filter(list, {}), list, 'Empty object accepts all items');
+        //   assert.deepEqual(_(list).filter({}), list, 'OO-filter');
+        // });
+
+        // QUnit.test('select', function(assert) {
+        //   assert.strictEqual(_.select, _.filter, 'is an alias for filter');
+        // });
+      })
+      console.groupEnd();
+
+    </script>
+    <script> // _.groupBy
+          
+      console.groupCollapsed('_.groupBy');
+      tests({
+        
+        'use1: _.groupBy([1, 2, 3, 4, 5, 6], function(num){ return num % 2; }) => {"0": [2, 4, 6], "1": [1, 3, 5]}': function(){
+
+          var parity = _.groupBy([1, 2, 3, 4, 5, 6], function(num){ return num % 2; });
+          eq(_.keys(parity).includes('0'), true);
+          eq(_.keys(parity).includes('1'), true);
+          arrayEq(parity['0'], [2,4,6]);
+          arrayEq(parity['1'], [1,3,5]);
+        },
+
+        'use2: _.groupBy(list, "length");': function(){
+
+          var list = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+          var grouped = _.groupBy(list, 'length');
+          arrayEq(grouped['3'], ['one', 'two', 'six', 'ten']);
+          arrayEq(grouped['4'], ['four', 'five', 'nine']);
+          arrayEq(grouped['5'], ['three', 'seven', 'eight']);
+        },
+
+        'use1: _.groupBy([{}], function(){ eq(this, context); }, context);': function(){
+
+          var context = {};
+          _.groupBy([{}], function(){ eq(this, context); }, context);
+        },
+
+        'use1: _.groupBy([4.2, 6.1, 6.4], function(num) {return Math.floor(num) > 4? "hasOwnProperty" : "constructor";});': function(){
+          
+          grouped = _.groupBy([4.2, 6.1, 6.4], function(num) {
+            return Math.floor(num) > 4 ? 'hasOwnProperty' : 'constructor';
+          });
+          eq(grouped.constructor.length, 1);
+          eq(grouped.hasOwnProperty.length, 2);
+        },
+
+        'use1: _.groupBy(array, function(value, index, obj){ objEq(obj[0], array[0]); });': function(){
+          var array = [{}];
+          _.groupBy(array, function(value, index, obj){ objEq(obj[0], array[0]); });
+        },
+
+        'use3: _.groupBy([1, 2, 1, 2, 3])': function(){
+          array = [1, 2, 1, 2, 3];
+          grouped = _.groupBy(array);
+          eq(grouped['1'].length, 2);
+          eq(grouped['3'].length, 1);
+        },
+
+        'use4: _.isEqual(_.groupBy(matrix, 0), {1: [[1, 2], [1, 3]], 2: [[2, 3]]})': function(){
+          var matrix = [
+            [1, 2],
+            [1, 3],
+            [2, 3]
+          ];
+          _.isEqual(_.groupBy(matrix, 0), {1: [[1, 2], [1, 3]], 2: [[2, 3]]});
+          _.isEqual(_.groupBy(matrix, 1), {2: [[1, 2]], 3: [[1, 3], [2, 3]]});
+        },
+
+        'use5: can group by deep properties': function(){
+
+          var liz = {name: 'Liz', stats: {power: 10}};
+          var chelsea = {name: 'Chelsea', stats: {power: 10}};
+          var jordan = {name: 'Jordan', stats: {power: 6}};
+          var collection = [liz, chelsea, jordan];
+          var expected = {
+            10: [liz, chelsea],
+            6: [jordan]
+          };
+          _.isEqual(_.groupBy(collection, ['stats', 'power']), expected);
+        },
+
+        'use6: will coerce arrays to string keys': function(){
+
+          var foos = [{foo: [1, 2]}, {foo: [1, 2]}]
+          _.isEqual(_.groupBy(foos, 'foo'), {"1,2": foos});
+
+        },
+      });
+      console.groupEnd();
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

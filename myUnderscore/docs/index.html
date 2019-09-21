@@ -1,0 +1,3289 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>my-underscore-docs 0.1.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>my-underscore-docs</h3>
+          <div class='mb1'><code>0.1.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#internalreference'
+                  class=" toggle-sibling">
+                  internalReference
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#internalreferenceroot'
+                        class='regular pre-open'>
+                        .root
+                      </a></li>
+                    
+                      <li><a
+                        href='#internalreferencepreviousunderscore'
+                        class='regular pre-open'>
+                        .previousUnderscore
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#internaldependencies'
+                  class=" toggle-sibling">
+                  internalDependencies
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#internaldependenciesarrayproto'
+                        class='regular pre-open'>
+                        .ArrayProto
+                      </a></li>
+                    
+                      <li><a
+                        href='#internaldependenciesobjproto'
+                        class='regular pre-open'>
+                        .ObjProto
+                      </a></li>
+                    
+                      <li><a
+                        href='#internaldependenciessymbolproto'
+                        class='regular pre-open'>
+                        .SymbolProto
+                      </a></li>
+                    
+                      <li><a
+                        href='#internaldependenciespush'
+                        class='regular pre-open'>
+                        .push
+                      </a></li>
+                    
+                      <li><a
+                        href='#internaldependenciesslice'
+                        class='regular pre-open'>
+                        .slice
+                      </a></li>
+                    
+                      <li><a
+                        href='#internaldependenciestostring'
+                        class='regular pre-open'>
+                        .toString
+                      </a></li>
+                    
+                      <li><a
+                        href='#internaldependencieshasownproperty'
+                        class='regular pre-open'>
+                        .hasOwnProperty
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#internalfunctions'
+                  class=" toggle-sibling">
+                  internalFunctions
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#internalfunctionsctor'
+                        class='regular pre-open'>
+                        .Ctor
+                      </a></li>
+                    
+                      <li><a
+                        href='#internalfunctions_'
+                        class='regular pre-open'>
+                        ._
+                      </a></li>
+                    
+                      <li><a
+                        href='#internalfunctionsoptimizecb'
+                        class='regular pre-open'>
+                        .optimizeCb
+                      </a></li>
+                    
+                      <li><a
+                        href='#internalfunctionscb'
+                        class='regular pre-open'>
+                        .cb
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#iteratee'
+                  class="">
+                  iteratee
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#each'
+                  class="">
+                  each
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#each'
+                  class="">
+                  each
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#map'
+                  class="">
+                  map
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#map'
+                  class="">
+                  map
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#reduce'
+                  class="">
+                  reduce
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#find'
+                  class="">
+                  find
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#groupby'
+                  class="">
+                  groupBy
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#intersection'
+                  class="">
+                  intersection
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#keys'
+                  class="">
+                  keys
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#keys'
+                  class="">
+                  keys
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isarray'
+                  class="">
+                  isArray
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isobject'
+                  class="">
+                  isObject
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#property'
+                  class="">
+                  property
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#times'
+                  class="">
+                  times
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#restarguments'
+                  class="">
+                  restArguments
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#basecreate'
+                  class="">
+                  baseCreate
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#shallowproperty'
+                  class="">
+                  shallowProperty
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#has'
+                  class="">
+                  has
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#deepget'
+                  class="">
+                  deepGet
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isarraylike'
+                  class="">
+                  isArrayLike
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isarraylike'
+                  class="">
+                  isArrayLike
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#createreduce'
+                  class="">
+                  createReduce
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#reducer'
+                  class="">
+                  reducer
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#group'
+                  class="">
+                  group
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#createpredicateindexfinder'
+                  class="">
+                  createPredicateIndexFinder
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='internalreference'>
+      internalReference
+    </h3>
+    
+    
+  </div>
+  
+
+  <p><strong>Wrapper</strong> to organize all internal variables and functions inside</p>
+
+    <div class='pre p1 fill-light mt0'>internalReference</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='internalreferenceroot'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>root</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p><strong>Alias</strong> to <code>window</code>, <code>self</code>, <code>global</code>, <code>this</code>, or <code>{}</code></p>
+
+    <div class='pre p1 fill-light mt0'>root</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internalreferencepreviousunderscore'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>previousUnderscore</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p><strong>Store</strong> previousUnderscore = root._;</p>
+
+    <div class='pre p1 fill-light mt0'>previousUnderscore</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='internaldependencies'>
+      internalDependencies
+    </h3>
+    
+    
+  </div>
+  
+
+  <p><strong>Wrapper</strong> for prototypes and methods underscoreJS depends on</p>
+
+    <div class='pre p1 fill-light mt0'>internalDependencies</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='internaldependenciesarrayproto'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>ArrayProto</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>ArrayProto = Array.prototype;</p>
+
+    <div class='pre p1 fill-light mt0'>ArrayProto</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internaldependenciesobjproto'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>ObjProto</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>ObjProto = Object.prototype;</p>
+
+    <div class='pre p1 fill-light mt0'>ObjProto</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internaldependenciessymbolproto'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>SymbolProto</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>SymbolProto = Symbol.prototype or null;</p>
+
+    <div class='pre p1 fill-light mt0'>SymbolProto</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internaldependenciespush'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>push</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>push = ArrayProto.push;</p>
+
+    <div class='pre p1 fill-light mt0'>push</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internaldependenciesslice'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>slice</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>slice = ArrayProto.slice;</p>
+
+    <div class='pre p1 fill-light mt0'>slice</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internaldependenciestostring'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>toString</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>toString = ObjProto.toString;</p>
+
+    <div class='pre p1 fill-light mt0'>toString</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internaldependencieshasownproperty'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>hasOwnProperty</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>hasOwnProperty = ObjProto.hasOwnProperty;</p>
+
+    <div class='pre p1 fill-light mt0'>hasOwnProperty</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='internalfunctions'>
+      internalFunctions
+    </h3>
+    
+    
+  </div>
+  
+
+  <p><strong>Wrapper</strong> to include all internal functions for creating underscore public API</p>
+
+    <div class='pre p1 fill-light mt0'>internalFunctions</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='internalfunctionsctor'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>Ctor</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Empty function for <strong>surrogate-prototype-swapping</strong></p>
+
+    <div class='pre p1 fill-light mt0'>Ctor</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internalfunctions_'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>_(obj)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>create an instance of object <code>_</code> and store <code>obj</code> as a property <code>_wrapped: obj</code></p>
+
+    <div class='pre p1 fill-light mt0'>_(obj: any): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        obj _ {_wrapped: obj}
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internalfunctionsoptimizecb'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>optimizeCb(func, context, argCount)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p><strong>Increase performance</strong> of callback execution by <strong>prioritizing</strong> <code>.call</code> over <code>.apply</code></p>
+
+    <div class='pre p1 fill-light mt0'>optimizeCb(func: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>, context: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, argCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>func</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    callback func
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    thisArg, usually an object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>argCount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    a number that count args for callback function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a function
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='internalfunctionscb'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>cb(value, context, argCount)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p><strong>CallbackTransformer</strong> : Because we want a method/callback to apply to any type, array, arrayLike, object and even nested version of them, the callback has to adjust itself accordingly.</p>
+
+    <div class='pre p1 fill-light mt0'>cb(value: dynamics, context: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, argCount: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(dynamics)</code>
+	    the value's typeof determines which callback to return
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    the object this inside the callback will refer to
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>argCount</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    number of args the callback has
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a callback or a callback execution
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='iteratee'>
+      iteratee
+    </h3>
+    
+    
+  </div>
+  
+
+  <p><strong>External wrapper</strong> for our callback generator <code>cb</code>. Users may customize
+<code>_.iteratee</code> if they want additional predicate/iteratee shorthand styles.
+This abstraction hides the internal-only argCount argument.</p>
+
+    <div class='pre p1 fill-light mt0'>iteratee(value: any, context: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='each'>
+      each
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>OFFICIAL: <a href="https://underscorejs.org/#each">https://underscorejs.org/#each</a>
+// The cornerstone, an <code>each</code> implementation, aka <code>forEach</code>.
+// Handles raw objects in addition to array-likes. Treats all
+// sparse array-likes as if they were dense.</p>
+
+    <div class='pre p1 fill-light mt0'>each</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='each'>
+      each
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>run callback on each element of an array, arrayLike, or object, return <code>obj</code></p>
+
+    <div class='pre p1 fill-light mt0'>each</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    array, array-like object, object in general
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iteratee</span> <code class='quiet'>(any)</code>
+	    callback function
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    thisArg
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        obj
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='map'>
+      map
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>OFFICIAL: <a href="https://underscorejs.org/#map">https://underscorejs.org/#map</a>
+Return the results of applying the iteratee to each element.</p>
+
+    <div class='pre p1 fill-light mt0'>map</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='map'>
+      map
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>run callback on each element of array, arrayLike or other object, return an array with each result in it</p>
+
+    <div class='pre p1 fill-light mt0'>map</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    array, arrayLike or other object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iteratee</span> <code class='quiet'>(any)</code>
+	    callback function
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    thisArg, usually an object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        <code>obj</code>
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='reduce'>
+      reduce
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>what's behind _.reduce = createReduce(1)?</p>
+<ol start="0">
+<li>createReduce(1)</li>
+<li>created reducer function to do real reduction work</li>
+<li>passed 1 to set <code>reducer</code> to work from left to right</li>
+<li>returned a wrapper function of reducer</li>
+<li>this wrapper function </li>
+<li>ask users for 4 arguments (obj, iteratee, memo, context)</li>
+<li>further prepares initial or memo, and iteratee for running reducer internally</li>
+</ol>
+
+    <div class='pre p1 fill-light mt0'>reduce</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='find'>
+      find
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>_.find(obj, predicate, context) => the first element that matches predicate</p>
+
+    <div class='pre p1 fill-light mt0'>find</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    arrayLike or object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>predicate</span> <code class='quiet'>(any)</code>
+	    a callback or an element of obj
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    an object, thisArg
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        an element of obj
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='groupby'>
+      groupBy
+    </h3>
+    
+    
+  </div>
+  
+
+  <p><em>.groupBy(obj,iteratee,context): <code>behavior</code> for `</em>.groupBy<code>is the following 1. if</code>result<code>does not have</code>key`, result[ key ] = [ value ];
+2. if it does, result[ key ].push(value)</p>
+
+    <div class='pre p1 fill-light mt0'>groupBy</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(arrayLikeOrObject)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iteratee</span> <code class='quiet'>(dynamicValue)</code>
+	    value which triggers callbackTransformer in 
+<code>cb</code>
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    thisArg
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">// use1: _.groupBy(array, callback) group elements by callback(el,idx,array) result</span>
+_.groupBy([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">num</span>)</span>{ <span class="hljs-keyword">return</span> num % <span class="hljs-number">2</span>; }) 
+<span class="hljs-comment">// =&gt; {"0": [2, 4, 6], "1": [1, 3, 5]}</span></pre>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">// use2: _.groupBy(array, 'length') =&gt; group elements by _.property('length')(...) result</span>
+<span class="hljs-keyword">var</span> list = [<span class="hljs-string">'one'</span>, <span class="hljs-string">'two'</span>, <span class="hljs-string">'three'</span>, <span class="hljs-string">'four'</span>, <span class="hljs-string">'five'</span>, <span class="hljs-string">'six'</span>, <span class="hljs-string">'seven'</span>, <span class="hljs-string">'eight'</span>, <span class="hljs-string">'nine'</span>, <span class="hljs-string">'ten'</span>];
+<span class="hljs-keyword">var</span> grouped = _.groupBy(list, <span class="hljs-string">'length'</span>);
+arrayEq(grouped[<span class="hljs-string">'3'</span>], [<span class="hljs-string">'one'</span>, <span class="hljs-string">'two'</span>, <span class="hljs-string">'six'</span>, <span class="hljs-string">'ten'</span>]);
+arrayEq(grouped[<span class="hljs-string">'4'</span>], [<span class="hljs-string">'four'</span>, <span class="hljs-string">'five'</span>, <span class="hljs-string">'nine'</span>]);
+arrayEq(grouped[<span class="hljs-string">'5'</span>], [<span class="hljs-string">'three'</span>, <span class="hljs-string">'seven'</span>, <span class="hljs-string">'eight'</span>]);</pre>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">// use3 _.groupBy(array) =&gt; group elements by _.identity(el) result</span>
+<span class="hljs-keyword">var</span> array = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+<span class="hljs-keyword">var</span> grouped = _.groupBy(array);
+eq(grouped[<span class="hljs-string">'1'</span>].length, <span class="hljs-number">2</span>);
+eq(grouped[<span class="hljs-string">'3'</span>].length, <span class="hljs-number">1</span>);</pre>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">// use4 _.groupBy(arrayOfArrays, number) =&gt; group element(a sub-array) by _.property(number)(el-subarray)</span>
+<span class="hljs-keyword">var</span> matrix = [
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>],
+  [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>],
+  [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]
+];
+_.isEqual(_.groupBy(matrix, <span class="hljs-number">0</span>), {<span class="hljs-number">1</span>: [[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>]], <span class="hljs-number">2</span>: [[<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]]});
+_.isEqual(_.groupBy(matrix, <span class="hljs-number">1</span>), {<span class="hljs-number">2</span>: [[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]], <span class="hljs-number">3</span>: [[<span class="hljs-number">1</span>, <span class="hljs-number">3</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>]]});</pre>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">// use5 _.groupBy(arrayOfObjects, arrayOfKeys) =&gt; group element(an object) by _.property(arrayOfKeys)(el-object)</span>
+<span class="hljs-keyword">var</span> liz = {<span class="hljs-attr">name</span>: <span class="hljs-string">'Liz'</span>, <span class="hljs-attr">stats</span>: {<span class="hljs-attr">power</span>: <span class="hljs-number">10</span>}};
+<span class="hljs-keyword">var</span> chelsea = {<span class="hljs-attr">name</span>: <span class="hljs-string">'Chelsea'</span>, <span class="hljs-attr">stats</span>: {<span class="hljs-attr">power</span>: <span class="hljs-number">10</span>}};
+<span class="hljs-keyword">var</span> jordan = {<span class="hljs-attr">name</span>: <span class="hljs-string">'Jordan'</span>, <span class="hljs-attr">stats</span>: {<span class="hljs-attr">power</span>: <span class="hljs-number">6</span>}};
+<span class="hljs-keyword">var</span> collection = [liz, chelsea, jordan];
+<span class="hljs-keyword">var</span> expected = {
+  <span class="hljs-number">10</span>: [liz, chelsea],
+  <span class="hljs-number">6</span>: [jordan]
+};
+_.isEqual(_.groupBy(collection, [<span class="hljs-string">'stats'</span>, <span class="hljs-string">'power'</span>]), expected);</pre>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">// use6 _.groupBy(arrayOfObjects, key) =&gt; group element(an object) by _.property(key)(el-object)</span>
+<span class="hljs-keyword">var</span> foos = [{<span class="hljs-attr">foo</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]}, {<span class="hljs-attr">foo</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>]}]
+_.isEqual(_.groupBy(foos, <span class="hljs-string">'foo'</span>), {<span class="hljs-string">"1,2"</span>: foos});</pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='intersection'>
+      intersection
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>tests
+// debugger;
+// _.union([1,2],[3,4]);</p>
+
+    <div class='pre p1 fill-light mt0'>intersection(array: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='keys'>
+      keys
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>OFFICIAL
+Retrieve the names of an object's own properties.
+Delegates to <strong>ECMAScript 5</strong>'s native <code>Object.keys</code>.</p>
+
+    <div class='pre p1 fill-light mt0'>keys(obj: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='keys'>
+      keys
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>_.keys(obj) => [] or [key1, key2, ...] of direct properties not properties on prototype</p>
+
+    <div class='pre p1 fill-light mt0'>keys(obj: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    arrayLike or objects
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isarray'>
+      isArray
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>_.isArray(obj): check whether an array or not
+use Array.isArray or toString.call(obj)</p>
+
+    <div class='pre p1 fill-light mt0'>isArray</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isobject'>
+      isObject
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>_.isObject(obj): check whether an obj is of type 'function' or 'object'
+obj: must not be undefined, null, NaN</p>
+
+    <div class='pre p1 fill-light mt0'>isObject(obj: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='property'>
+      property
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>_.property(path)(obj) => get a value from shallow object or nested object</p>
+
+    <div class='pre p1 fill-light mt0'>property(path: any, obj: any): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>path</span> <code class='quiet'>(any)</code>
+	    a key or an array of keys
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    an array, arrayLike, other object or their nested version
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a single value or undefined
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='times'>
+      times
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>tests
+// debugger;
+_.matcher({num: 1})({num:1}) => true</p>
+
+    <div class='pre p1 fill-light mt0'>times(n: any, iteratee: any, context: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>n</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iteratee</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='restarguments'>
+      restArguments
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>func(args) => restArguments(func, startIndex)(arg1, arg2, ...) => no array format is needed
+func([el1, el2, el3, ... ]) => restArguments(func, 0)(el1, el2, el3, ...)
+func(arg1, [el1, el2, ...]) => restArguments(func, 1)(arg1, el1, el2, ...)
+func(arg1, arg2, [el1, el2, ...]) => restArguments(func, 2)(arg1, arg2, el1, el2, ...)
+<em>.union(arrays) => restArgument(</em>.union, 0)([1,2], [3,4], ...)
+<em>.without(array, otherArrays) => restArgument(</em>.without, 1)([1,2,3,4], 2,4,...)
+var log = <em>.bind(console.log, console);
+</em>.delay(func, wait, args) => restArgument(_.delay, 2)(log, 1000, 'logged later', 'and more', 'and less')</p>
+
+    <div class='pre p1 fill-light mt0'>restArguments</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='basecreate'>
+      baseCreate
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>baseCreate({num: 1}) => {}; whose {}.<strong>proto</strong> === {num:1}</p>
+
+    <div class='pre p1 fill-light mt0'>baseCreate</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>prototype</span> <code class='quiet'>(any)</code>
+	    an object
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        an object with prototype to be its 
+<strong>proto</strong>
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='shallowproperty'>
+      shallowProperty
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>shallowProperty(key)(obj) => obj[key] or undefined</p>
+
+    <div class='pre p1 fill-light mt0'>shallowProperty</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>key</span> <code class='quiet'>(any)</code>
+	    key of an object or key of an array
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    an object or an array
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a value or undefined
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='has'>
+      has
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>has(obj, path) ===> obj.hasOwnProperty(path) considering undefined and null too</p>
+
+    <div class='pre p1 fill-light mt0'>has</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    any object (array, arrayLike, other object)
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>path</span> <code class='quiet'>(any)</code>
+	    key to the obj above
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a bool
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='deepget'>
+      deepGet
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>deepGet(obj, path) => a value at many level deep of a nested array, or arrayLike or other object</p>
+
+    <div class='pre p1 fill-light mt0'>deepGet</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    array, arrayLike or ohter object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>path</span> <code class='quiet'>(any)</code>
+	    an array of keys
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        single value or undefined
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isarraylike'>
+      isArrayLike
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>OFFICIAL
+// Helper for collection methods to determine whether a collection
+// should be iterated as an array or as an object.
+// Related: <a href="http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength">http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength</a>
+// Avoids a very nasty iOS 8 JIT bug on ARM-64. #2094</p>
+
+    <div class='pre p1 fill-light mt0'>isArrayLike</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='isarraylike'>
+      isArrayLike
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>isArrayLike(collection): check array, or arguments, or NodeList</p>
+
+    <div class='pre p1 fill-light mt0'>isArrayLike</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>collection</span> <code class='quiet'>(any)</code>
+	    an array, arguments, or NodeList
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a bool
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='createreduce'>
+      createReduce
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>createReduce(dir)(obj, iteratee, memo, context)</p>
+
+    <div class='pre p1 fill-light mt0'>createReduce</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>dir</span> <code class='quiet'>(any)</code>
+	    1 or -1, for starting left or right
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    array, arrayLike, or other object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iteratee</span> <code class='quiet'>(any)</code>
+	    a function, callback(memo, value, idx, obj)
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>memo</span> <code class='quiet'>(any)</code>
+	    a number, variable to accumulate values
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    an object, thisArg
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        a value, memo
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='reducer'>
+      reducer
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>reducer(obj, iteratee, memo, initial) => memo</p>
+
+    <div class='pre p1 fill-light mt0'>reducer(obj: any, iteratee: any, memo: any, initial: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    array, or arrayLike, or object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iteratee</span> <code class='quiet'>(any)</code>
+	    a function, callback(accumulator, value, idx, obj)
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>memo</span> <code class='quiet'>(any)</code>
+	    a number, accumulator or initial value
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>initial</span> <code class='quiet'>(any)</code>
+	    a bool, whether the initial memo is provided by the user
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='group'>
+      group
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>group(behavior, partition) => [[...],[...]] or {...}
+1. create the returned container [[ ],[ ]], or { }, <code>result</code>
+2. callbackTransformer based on value of <code>iteratee</code>
+3. invoke callback on each element and get result <code>key</code>
+4. run <code>behavior</code> which sets rules for how <code>result</code> use <code>key</code> to store <code>value</code>
+5. return <code>result</code></p>
+
+    <div class='pre p1 fill-light mt0'>group(behavior: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>, partition: collection, obj: any, iteratee: any, context: any, key: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>behavior</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    a func
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>partition</span> <code class='quiet'>(collection)</code>
+	    act as a bool
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>obj</span> <code class='quiet'>(any)</code>
+	    arrayLike or object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>iteratee</span> <code class='quiet'>(any)</code>
+	    value which triggers callbackTransformer in 
+<code>cb</code>
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    thisArg
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>key</span> <code class='quiet'>(any)</code>
+	    result of element invocation on callback
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='createpredicateindexfinder'>
+      createPredicateIndexFinder
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>createPredicateIndexFinder(1)(array, predicate, context) => _.findIndex(...)</p>
+
+    <div class='pre p1 fill-light mt0'>createPredicateIndexFinder</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>dir</span> <code class='quiet'>(any)</code>
+	    1: get first matched index, -1: get last matched index
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>array</span> <code class='quiet'>(any)</code>
+	    array of numbers or even objects
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>predicate</span> <code class='quiet'>(any)</code>
+	    a callback or an object
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>context</span> <code class='quiet'>(any)</code>
+	    an object, thisArg
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        index or -1
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

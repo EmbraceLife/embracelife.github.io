@@ -1,0 +1,11 @@
+{
+  "name": "my-underscore-docs",
+  "version": "0.1.0",
+  "devDependencies": {
+    "documentation": "^12.1.2"
+  },
+  "scripts": {
+    "docDev": "documentation serve --watch underscore-commented.js",
+    "docHtml": "documentation build underscore-commented.js -f html -o docs"
+  }
+}
